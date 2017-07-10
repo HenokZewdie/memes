@@ -18,6 +18,15 @@
 
             <form method="POST" action="/upload" enctype="multipart/form-data">
                 <input type="file" name="file" /><br/><br/>
+                <div class="form-group">
+                    <label for="sel1">Select list:</label>
+                    <select class="form-control" id="sel1">
+                        <option>spongebob</option>
+                        <option>notspongebob</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
                 <input type="submit" value="Submit" />
             </form>
             <div th:if="${message}">
